@@ -36,5 +36,5 @@ jobs:
     - name: Upload Dol
       uses: actions/upload-artifact@v3
       with:
-        name: upload dol
+        name: main.dol
         path: build/pikmin2.usa/main.dol
