@@ -4,6 +4,7 @@
 #include "Game/Cave/Node.h"
 #include "Game/Cave/Info.h"
 #include "Dolphin/rand.h"
+#include "Game/Entities/ItemOnyon.h"
 
 namespace Game {
 
@@ -110,7 +111,10 @@ Game::Cave::MapNode* Game::Cave::RandPlantUnit::getPlantSetMapNode(Game::Cave::B
 		if (mapBaseGen) { // if it exists, loop through the base gen for the map node
 			BaseGen* currBaseGen = (BaseGen*)mapBaseGen->m_child;
 			for (currBaseGen; currBaseGen; currBaseGen = (BaseGen*)currBaseGen->m_next) {
-
+				if (currBaseGen->m_spawnType == 6) {
+					Onyon* o = ItemOnyon::mgr->birth(2, 0);
+					o->m_position = currBaseGen->m_position;
+				}
 				// if the spawn type is 6 (plant) and it DOESN'T have a plant, add it to the list
 				if ((currBaseGen->m_spawnType == 6) && (isPlantSet(currMapNode, currBaseGen))) {
 					mapNodeArr[count] = currMapNode;
