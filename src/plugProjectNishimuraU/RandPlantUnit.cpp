@@ -113,7 +113,7 @@ Game::Cave::MapNode* Game::Cave::RandPlantUnit::getPlantSetMapNode(Game::Cave::B
 			for (currBaseGen; currBaseGen; currBaseGen = (BaseGen*)currBaseGen->m_next) {
 				if (currBaseGen->m_spawnType == 9) {
 					Onyon* o = ItemOnyon::mgr->birth(0, 2);
-					o->setPosition(currBaseGen->m_position);
+					o->setPosition(currBaseGen->m_position, true);
 				}
 				// if the spawn type is 6 (plant) and it DOESN'T have a plant, add it to the list
 				if ((currBaseGen->m_spawnType == 6) && (isPlantSet(currMapNode, currBaseGen))) {
