@@ -133,6 +133,7 @@ lbl_804AB390:
 	.4byte .L_8010CBE8
 	.4byte .L_8010CBC0
 	.4byte .L_8010C9BC
+	.4byte .L_8010CC34
 .global __vt__Q24Game15GeneralEnemyMgr
 __vt__Q24Game15GeneralEnemyMgr:
 	.4byte 0
