@@ -1889,16 +1889,16 @@ __ct__Q34Game15IllustratedBook5ParmsFv:
 /* 801322FC 0012F23C  3F BE 00 01 */	addis r29, r30, 1
 /* 80132300 0012F240  38 04 B5 28 */	addi r0, r4, __vt__5CNode@l
 /* 80132304 0012F244  38 A0 00 00 */	li r5, 0
-/* 80132308 0012F248  90 1D 02 60 */	stw r0, 0x260(r29)
+/* 80132308 0012F248  90 1D 02 60 */	stw r0, 0x4d4(r29)
 /* 8013230C 0012F24C  3C 60 80 4B */	lis r3, __vt__Q34Game15IllustratedBook13ItemModeParms@ha
 /* 80132310 0012F250  38 9F 01 84 */	addi r4, r31, 0x184
-/* 80132314 0012F254  90 BD 02 70 */	stw r5, 0x270(r29)
+/* 80132314 0012F254  90 BD 02 70 */	stw r5, 0x4e4(r29)
 /* 80132318 0012F258  38 03 F9 E8 */	addi r0, r3, __vt__Q34Game15IllustratedBook13ItemModeParms@l
-/* 8013231C 0012F25C  90 BD 02 6C */	stw r5, 0x26c(r29)
-/* 80132320 0012F260  90 BD 02 68 */	stw r5, 0x268(r29)
-/* 80132324 0012F264  90 BD 02 64 */	stw r5, 0x264(r29)
-/* 80132328 0012F268  90 9D 02 74 */	stw r4, 0x274(r29)
-/* 8013232C 0012F26C  94 1D 02 60 */	stwu r0, 0x260(r29)
+/* 8013231C 0012F25C  90 BD 02 6C */	stw r5, 0x4e0(r29)
+/* 80132320 0012F260  90 BD 02 68 */	stw r5, 0x4dc(r29)
+/* 80132324 0012F264  90 BD 02 64 */	stw r5, 0x4d8(r29)
+/* 80132328 0012F268  90 9D 02 74 */	stw r4, 0x4e8(r29)
+/* 8013232C 0012F26C  94 1D 02 60 */	stwu r0, 0x4d4(r29)
 /* 80132330 0012F270  48 0F 17 39 */	bl getMaxPelletID__Q34Game10SingleGame10ZukanStateFv
 /* 80132334 0012F274  90 7D 00 1C */	stw r3, 0x1c(r29)
 /* 80132338 0012F278  83 5D 00 1C */	lwz r26, 0x1c(r29)
@@ -1951,7 +1951,7 @@ __ct__Q34Game15IllustratedBook5ParmsFv:
 /* 801323EC 0012F32C  48 2D F0 1D */	bl add__5CNodeFP5CNode
 /* 801323F0 0012F330  3C 9E 00 01 */	addis r4, r30, 1
 /* 801323F4 0012F334  7F C3 F3 78 */	mr r3, r30
-/* 801323F8 0012F338  38 84 02 60 */	addi r4, r4, 0x260
+/* 801323F8 0012F338  38 84 02 60 */	addi r4, r4, 0x4d4
 /* 801323FC 0012F33C  48 2D F0 0D */	bl add__5CNodeFP5CNode
 /* 80132400 0012F340  7F C3 F3 78 */	mr r3, r30
 /* 80132404 0012F344  BB 21 00 14 */	lmw r25, 0x14(r1)
@@ -2113,7 +2113,7 @@ read__Q34Game15IllustratedBook5ParmsFR6Stream:
 /* 80132628 0012F568  7D 89 03 A6 */	mtctr r12
 /* 8013262C 0012F56C  4E 80 04 21 */	bctrl 
 /* 80132630 0012F570  3C 7E 00 01 */	addis r3, r30, 1
-/* 80132634 0012F574  85 83 02 60 */	lwzu r12, 0x260(r3)
+/* 80132634 0012F574  85 83 02 60 */	lwzu r12, 0x4d4(r3)
 /* 80132638 0012F578  7F E4 FB 78 */	mr r4, r31
 /* 8013263C 0012F57C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80132640 0012F580  7D 89 03 A6 */	mtctr r12
@@ -2196,12 +2196,12 @@ __dt__Q34Game15IllustratedBook5ParmsFv:
 /* 80132750 0012F690  3C 7E 00 01 */	addis r3, r30, 1
 /* 80132754 0012F694  3C 80 80 4B */	lis r4, __vt__Q34Game15IllustratedBook5Parms@ha
 /* 80132758 0012F698  38 84 F9 D4 */	addi r4, r4, __vt__Q34Game15IllustratedBook5Parms@l
-/* 8013275C 0012F69C  34 03 02 60 */	addic. r0, r3, 0x260
+/* 8013275C 0012F69C  34 03 02 60 */	addic. r0, r3, 0x4d4
 /* 80132760 0012F6A0  90 9E 00 00 */	stw r4, 0(r30)
 /* 80132764 0012F6A4  41 82 00 18 */	beq .L_8013277C
 /* 80132768 0012F6A8  3C 80 80 4B */	lis r4, __vt__Q34Game15IllustratedBook13ItemModeParms@ha
 /* 8013276C 0012F6AC  38 04 F9 E8 */	addi r0, r4, __vt__Q34Game15IllustratedBook13ItemModeParms@l
-/* 80132770 0012F6B0  94 03 02 60 */	stwu r0, 0x260(r3)
+/* 80132770 0012F6B0  94 03 02 60 */	stwu r0, 0x4d4(r3)
 /* 80132774 0012F6B4  38 80 00 00 */	li r4, 0
 /* 80132778 0012F6B8  48 2D EE 11 */	bl __dt__5CNodeFv
 .L_8013277C:
