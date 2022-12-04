@@ -107,7 +107,6 @@ EnemyInfo gEnemyInfo[] = {
    {"Tyre",               EnemyTypeID::EnemyID_Tyre,           -1,                                1,      0x0007,    "",             "",             "",             "",         "",         "",             "",             -1,                               0,    BDT_Empty},
    {"DangoMushi",         EnemyTypeID::EnemyID_DangoMushi,     -1,                                1,      0x0007,    "",             "",             "",             "",         "",         "",             "",             -1,                               0,    BDT_Boss},
    {"OrangePom",          EnemyTypeID::EnemyID_OrangePom,      EnemyTypeID::EnemyID_Pom,          1,      0x0006,    "Pom",          "Pom",          "Pom",          "Pom",      "Pom",      "Pom",          "Pom",          -1,                               0,    BDT_Empty},
-
 };
 // clang-format on
 
