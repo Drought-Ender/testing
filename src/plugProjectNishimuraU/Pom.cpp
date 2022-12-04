@@ -234,6 +234,11 @@ void Obj::setPomColor(int pikiKind)
 		m_rgbColor.g = 255;
 		m_rgbColor.b = 220;
 		break;
+	case Carrot:
+		m_rgbColor.r = 225;
+		m_rgbColor.g = 120;
+		m_rgbColor.b = 20;
+		break;
 	}
 }
 
@@ -261,6 +266,9 @@ void Obj::setPomParms()
 		break;
 	case EnemyTypeID::EnemyID_WhitePom:
 		setPomColor(White);
+		break;
+	case EnemyTypeID::EnemyID_OrangePom:
+		setPomColor(Carrot);
 		break;
 	case EnemyTypeID::EnemyID_RandPom:
 		setPomColor(Red);
