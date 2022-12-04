@@ -789,6 +789,7 @@ void VsGameSection::createVsPikmins()
 				Vector3f flagPos = currentOnyon->getFlagSetPos();
 				flagPos.y += pellet->getCylinderHeight() * 0.5f;
 				pellet->setPosition(flagPos, false);
+				pellet->m_depth = 0.5f;
 			}
 			pelletIter.next();
 		}
