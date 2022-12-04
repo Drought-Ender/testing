@@ -1860,7 +1860,7 @@ __ct__Q34Game15IllustratedBook5ParmsFv:
 /* 8013228C 0012F1CC  38 7D 00 18 */	addi r3, r29, 0x18
 /* 80132290 0012F1D0  38 C0 02 74 */	li r6, 0x274
 /* 80132294 0012F1D4  91 3E 08 18 */	stw r9, 0x818(r30)
-/* 80132298 0012F1D8  38 E0 00 66 */	li r7, 0x66
+/* 80132298 0012F1D8  38 E0 00 66 */	li r7, 0x67
 /* 8013229C 0012F1DC  91 3E 08 14 */	stw r9, 0x814(r30)
 /* 801322A0 0012F1E0  91 1E 08 24 */	stw r8, 0x824(r30)
 /* 801322A4 0012F1E4  90 1E 08 10 */	stw r0, 0x810(r30)
@@ -1883,7 +1883,7 @@ __ct__Q34Game15IllustratedBook5ParmsFv:
 /* 801322E4 0012F224  48 2D F1 25 */	bl add__5CNodeFP5CNode
 /* 801322E8 0012F228  3B 5A 00 01 */	addi r26, r26, 1
 /* 801322EC 0012F22C  3B 39 02 74 */	addi r25, r25, 0x274
-/* 801322F0 0012F230  2C 1A 00 66 */	cmpwi r26, 0x66
+/* 801322F0 0012F230  2C 1A 00 66 */	cmpwi r26, 0x67
 /* 801322F4 0012F234  41 80 FF C8 */	blt .L_801322BC
 /* 801322F8 0012F238  3C 80 80 4F */	lis r4, __vt__5CNode@ha
 /* 801322FC 0012F23C  3F BE 00 01 */	addis r29, r30, 1
@@ -2005,7 +2005,7 @@ __dt__Q34Game15IllustratedBook14EnemyModeParmsFv:
 /* 801324A8 0012F3E8  90 1E 00 00 */	stw r0, 0(r30)
 /* 801324AC 0012F3EC  38 7E 00 18 */	addi r3, r30, 0x18
 /* 801324B0 0012F3F0  38 84 1E 0C */	addi r4, r4, __dt__Q34Game15IllustratedBook10EnemyParmsFv@l
-/* 801324B4 0012F3F4  38 C0 00 66 */	li r6, 0x66
+/* 801324B4 0012F3F4  38 C0 00 66 */	li r6, 0x67
 /* 801324B8 0012F3F8  4B F8 F3 0D */	bl __destroy_arr
 /* 801324BC 0012F3FC  7F C3 F3 78 */	mr r3, r30
 /* 801324C0 0012F400  38 80 00 00 */	li r4, 0
@@ -2214,7 +2214,7 @@ __dt__Q34Game15IllustratedBook5ParmsFv:
 /* 80132794 0012F6D4  90 1E 08 10 */	stw r0, 0x810(r30)
 /* 80132798 0012F6D8  38 7E 08 28 */	addi r3, r30, 0x828
 /* 8013279C 0012F6DC  38 84 1E 0C */	addi r4, r4, __dt__Q34Game15IllustratedBook10EnemyParmsFv@l
-/* 801327A0 0012F6E0  38 C0 00 66 */	li r6, 0x66
+/* 801327A0 0012F6E0  38 C0 00 66 */	li r6, 0x67
 /* 801327A4 0012F6E4  4B F8 F0 21 */	bl __destroy_arr
 /* 801327A8 0012F6E8  38 7E 08 10 */	addi r3, r30, 0x810
 /* 801327AC 0012F6EC  38 80 00 00 */	li r4, 0
