@@ -204,7 +204,7 @@ struct EnemyModeParms : public CNode {
 
 	// _00     = VTBL
 	// _00-_18 = CNode
-	EnemyParms m_enemyParms[102]; // _18, array of parms for each enemy, 0-101
+	EnemyParms m_enemyParms[103]; // _18, array of parms for each enemy, 0-101
 };
 
 struct ItemParms : public CNode {
