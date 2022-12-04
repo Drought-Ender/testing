@@ -286,6 +286,7 @@ bool MapUnitGenerator::isPomGroup(TekiInfo* tekiInfo)
 	    (id == EnemyTypeID::EnemyID_YellowPom) || // yellow candypop
 	    (id == EnemyTypeID::EnemyID_BlackPom) ||  // black candypop
 	    (id == EnemyTypeID::EnemyID_WhitePom) ||  // white candypop
+	    (id == EnemyTypeID::EnemyID_OrangePom) ||  // orange candypop
 	    (id == EnemyTypeID::EnemyID_RandPom))     // queen candypop
 	{
 		return true;
