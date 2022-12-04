@@ -305,11 +305,9 @@ void Obj::shotPikmin()
 		Creature* creature = (*iter);
 		if (creature->isPiki() && creature->isStickToMouth()) {
 			int pikiKind = static_cast<Piki*>(creature)->m_pikiKind;
-			if (pikiKind <= Carrot) {
-				BirthMgr::dec(pikiKind);
-				if (getEnemyTypeID() != EnemyTypeID::EnemyID_RandPom && static_cast<Piki*>(creature)->m_pikiKind == m_pikiKind) {
-					m_usedSlotCount--;
-				}
+			BirthMgr::dec(pikiKind);
+			if (getEnemyTypeID() != EnemyTypeID::EnemyID_RandPom && static_cast<Piki*>(creature)->m_pikiKind == m_pikiKind) {
+				m_usedSlotCount--;
 			}
 			CreatureKillArg killArg(1);
 			InteractKill kill(this, &killArg);
