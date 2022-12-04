@@ -789,7 +789,6 @@ void VsGameSection::createVsPikmins()
 				Vector3f flagPos = currentOnyon->getFlagSetPos();
 				flagPos.y += pellet->getCylinderHeight() * 0.5f;
 				pellet->setPosition(flagPos, false);
-				pellet->m_depth = 0.5f;
 			}
 			pelletIter.next();
 		}
@@ -1324,6 +1323,7 @@ void VsGameSection::createRedBlueBedamas(Vector3f& pos)
 		Vector3f position;
 		Cave::randMapMgr->getItemDropPosition(position, 0.2f, 0.8f);
 		pellet->setPosition(position, false);
+		pellet->m_depth = 20.0f;
 		m_marbleRedBlue[i] = pellet;
 	}
 }
