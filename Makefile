@@ -250,17 +250,17 @@ tools:
 	$(MAKE) -C tools
 
 # ELF creation makefile instructions
-#ifeq ($(EPILOGUE_PROCESS),1)
-#	@echo Linking ELF $@
-#$(ELF): $(O_FILES) $(E_FILES) $(LDSCRIPT)
-#	$(QUIET) @echo $(O_FILES) > build/o_files
-#	$(QUIET) $(LD) $(LDFLAGS) -o $@ -lcf $(LDSCRIPT) @build/o_files
-#else
-#$(ELF): $(O_FILES) $(LDSCRIPT)
-#	@echo Linking ELF $@
-#	$(QUIET) @echo $(O_FILES) > build/o_files
-#	$(QUIET) $(LD) $(LDFLAGS) -o $@ -lcf $(LDSCRIPT) @build/o_files
-#endif
+ifeq ($(EPILOGUE_PROCESS),1)
+	@echo Linking ELF $@
+$(ELF): $(O_FILES) $(E_FILES) $(LDSCRIPT)
+	$(QUIET) @echo $(O_FILES) > build/o_files
+	$(QUIET) $(LD) $(LDFLAGS) -o $@ -lcf $(LDSCRIPT) @build/o_files
+else
+$(ELF): $(O_FILES) $(LDSCRIPT)
+	@echo Linking ELF $@
+	$(QUIET) @echo $(O_FILES) > build/o_files
+	$(QUIET) $(LD) $(LDFLAGS) -o $@ -lcf $(LDSCRIPT) @build/o_files
+endif
 
 %.d.unix: %.d $(TRANSFORM_DEP)
 	@echo Processing $<
