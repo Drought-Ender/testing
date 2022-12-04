@@ -21,7 +21,7 @@ static const char pomMgrName[]  = "246-PomMgr";
 Mgr::Mgr(int objLimit, u8 modelType)
     : EnemyMgrBase(objLimit, modelType)
 {
-	m_name = "ƒ|ƒ“ƒKƒV‘ƒ}ƒl[ƒWƒƒ"; // pongashi plant manager
+	m_name = "Æ’|Æ’â€œÆ’KÆ’Vâ€˜ÂÆ’}Æ’lÂ[Æ’WÆ’Æ’"; // pongashi plant manager
 }
 
 /*
@@ -98,7 +98,7 @@ void Mgr::createObj(int count)
 	m_obj = new Obj[count];
 
 	EnemyTypeID::EEnemyTypeID ids[] = { EnemyTypeID::EnemyID_BluePom,  EnemyTypeID::EnemyID_RedPom,   EnemyTypeID::EnemyID_YellowPom,
-		                                EnemyTypeID::EnemyID_BlackPom, EnemyTypeID::EnemyID_WhitePom, EnemyTypeID::EnemyID_RandPom };
+		                                EnemyTypeID::EnemyID_BlackPom, EnemyTypeID::EnemyID_WhitePom, EnemyID_OrangePom, EnemyTypeID::EnemyID_RandPom };
 	int id_count                    = sizeof(ids) / sizeof(EnemyTypeID::EEnemyTypeID);
 	int counter                     = 0;
 	for (int i = 0; i < id_count; i++) {
